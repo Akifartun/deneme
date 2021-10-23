@@ -5,4 +5,4 @@
 akifartun 
 insta akifartn
 
-[lorem ipsum]{http://www.atu.edu.tr/}
+[lorem ipsum]{https://atu.edu.tr/#!/}
