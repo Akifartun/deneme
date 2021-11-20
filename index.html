@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,109 +33,88 @@
             <nav id="navbar">
                 <h1 class="heading-small">Akif Artun</h1>
                 <ul>
-                    <li><a href="#home">Ana Sayfa</a></li>
-                    <li><a href="#training">Eğitimler</a></li>
-                    <li><a href="#courses">Kurslar</a></li>
-                    <li><a href="#contact">İletişim</a></li>
+                    <li><a href="#training">Ana Sayfa</a></li>
+                    <li><a href="#foods">Yemekler</a></li>
+                    <li><a href="#training">İçecekler</a></li>
+                    <li><a href="#training">Menüler</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li class="dropdown">
+                        <i class="fas fa-shopping-cart dropbtn"></i>
+                        <div class="dropdown-content">
+                            <a href="#" class="cart">Sepet Tutarı: 0</a>
+                    </li>
                 </ul>
             </nav>
-        </div>
+            </div>
     </header>
 
-    <section id="home">
-        <img src="./images/akif.jpeg" alt="Akif Artun">
-        <div class="name text-center">
-            <h2 class="heading-big">Akif Artun</h2>
-            <p>Student at ATU | Computer Engineering</p>
-        </div>
-        <a class="btn btn-primary btn-primary:hover" href="#courses">Kurslara Git</a>
-    </section>
-
-    <section id="training" class="bg-dark-blue">
-        <h3 class="text-center heading-medium">Eğitimler</h3>
-        <div class="items">
-            <article class="item">
-                <i class="fa fa-pencil-alt"></i>
-                <h3>Sınıf İçi eğitimler</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, saepe!</p>
-            </article>
-            <article class="item">
-                <i class="fa fa-pencil-alt"></i>
-                <h3>Online İçerikler</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, saepe!</p>
-            </article>
-            <article class="item">
-                <i class="fa fa-pencil-alt"></i>
-                <h3>Konferanslar</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, saepe!</p>
-            </article>
-        </div>
-    </section>
-
-    <section id="courses">
-        <h3 class="text-center heading-medium">Kurslar</h3>
+    <section id="foods">
+        <h3 class="text-center heading-medium">Yemekler</h3>
         <div class="container">
-            <div class="courses">
-                <div class="course">
-                    <div class="course-image">
-                        <img src="./images/python.jpg" alt="Python">
-                        <span>%90 İndirim</span>
+            <div class="foods">
+                <div class="food">
+                    <div class="food-image">
+                        <img src="https://img.acunn.com/uploads/icerikler/2020/08/16/adana-kebap-tarifi9282933605f38595ea5fa8.jpg" alt="adana-kebap">
+
                     </div>
-                    <div class="course-info">
+                    <div class="food-info">
                         <div class="title">
-                            (40+ Saat) Python | Sıfırdan İleri Seviye Programlama (2020)
+                            Adana Kebap
                         </div>
                         <div class="description">
-                            (40+ Saat) Python | Sıfırdan İleri Seviye Programlama (2020)
+                            150 gr Adana Kebap, Soğan Salatası, Mevsim Salata, Domates Ezme.
                         </div>
-                        <div class="instructor">
-                            Mustafa Murat Coşkun,Yazılım Bilimi
+                        <div class="fiyat">
+                            <p class="kebap">35</p>35 tl
                         </div>
-                        <div class="rating">
-                            4.6 | (19990 Oylama)
+                        <div class="buy">
+                            <button id="decrease1">-</button>
+                            <p id="amount1">0</p>
+                            <button id="increase1">+</button>
                         </div>
                     </div>
                 </div>
-                <div class="course">
-                    <div class="course-image">
-                        <img src="./images/java.jpg" alt="Python">
-                        <span>%90 İndirim</span>
+                <div class="food">
+                    <div class="food-image">
+                        <img src="https://lh3.googleusercontent.com/proxy/3_1-wGjqWaXHdsKwtMGaQQrQ9x_2eCeBtA-wymfFoIr1cNKG0DzY84cwTbhp_3jogT9pJCkbkufdofrTe2jQznlNAIzs9YPQW5mPEaw31nmvf9Wafh56eWR-laNmK_t_AWv4ax-Zo4E5HhdVn-H4UFbZZ6ckPA" alt="kusbaşı-kebap">
+
                     </div>
-                    <div class="course-info">
+                    <div class="food-info">
                         <div class="title">
-                            Komple Java Geliştirici Kursu
+                            Kuşbaşı Kebap
                         </div>
                         <div class="description">
-                            Komple Java Geliştirici Kursu | Sıfırdan Java Öğrenin
+                            Soğan salatası, biber, mevsim salatası, pişmiş soğan, Domates Ezme.</div>
+                        <div class="fiyat">
+                            <p class="kusbasi">40</p>40 tl
                         </div>
-                        <div class="instructor">
-                            Mustafa Murat Coşkun,Yazılım Bilimi
+                        <div class="buy">
+                            <button id="decrease2">-</button>
+                            <p id="amount2">0</p>
+                            <button id="increase2">+</button>
                         </div>
-                        <div class="rating">
-                            4.6 | (7000 Oylama)
-                        </div>
-
                     </div>
                 </div>
-                <div class="course">
-                    <div class="course-image">
-                        <img src="./images/javascript.jpg" alt="Python">
-                        <span>%90 İndirim</span>
+                <div class="food">
+                    <div class="food-image">
+                        <img src="https://cdn.yemek.com/mncrop/600/315/uploads/2015/09/ciger-sis-yeni.jpg" alt="ciger-sis">
+
                     </div>
-                    <div class="course-info">
+                    <div class="food-info">
                         <div class="title">
-                            Komple Modern JavaScript Kursu
+                            Ciğer Şiş
                         </div>
                         <div class="description">
-                            Komple Modern JavaScript Kursu - ES6+
+                            6 adet Ciğer Şiş, biber, Soğan Salatası, Mevsim Salata, Domates Ezme.
                         </div>
-                        <div class="instructor">
-                            Mustafa Murat Coşkun,Yazılım Bilimi
+                        <div class="fiyat">
+                            <p class="ciger">30</p>30 tl
                         </div>
-                        <div class="rating">
-                            4.7 | (2000 Oylama)
+                        <div class="buy">
+                            <button id="decrease3">-</button>
+                            <p id="amount3">0</p>
+                            <button id="increase3">+</button>
                         </div>
-
                     </div>
                 </div>
             </div>
