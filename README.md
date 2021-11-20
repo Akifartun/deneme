@@ -1,5 +1,4 @@
-# Deneme 
+# WEB DESIGN AND PROGRAMMING PROJECT 
 
-## Alt Bilgi 
 
-sdafddasdasasfadfdsfasdasdasawa
+Frontend Tasarım ve Kodu (Last updated 20.11.2021)
